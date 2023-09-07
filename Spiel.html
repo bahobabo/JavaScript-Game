@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>MasterMind</title>
+<link rel="stylesheet" href="Spiel.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body onload="colorsBereitStellen()">
+
+
+  <button onclick="FarbeErstellen();startGame()" id="start">Start</button>
+
+
+<div class='at-container'>
+	<div id='at-item' > MasterMind </div>
+</div>
+
+
+
+<div>
+<input id="name" name="name" type="text" value="Name" style=" width:150px ;height:20px  ;margin-bottom: 30px; margin-right: 40px;" />
+ Score:<input type="text" id="punkte" name="punkte" readonly value="" style=" width:50px ;height:20px" />
+</div>
+
+<button onclick="restart()">Restart</button>
+<input type="reset" value="reset" style="color:red">
+
+
+<div style="align-items: center; justify-content: center; display: flex;">
+<table>
+<caption>Farben</caption>
+<tr>
+
+<td>
+<select id="1" class="color" >
+
+  <option value="0">0</option>
+  <option value="red">red</option>
+  <option value="blue">blue</option>
+  <option value="green">green</option>
+  <option value="yellow">yellow</option>
+
+</select>
+</td>
+<td>
+<select id="2" class="color" >
+
+  <option value="0">0</option>
+  <option value="red">red</option>
+  <option value="blue">blue</option>
+  <option value="green">green</option>
+  <option value="yellow">yellow</option>
+
+</select>
+</td>
+
+<td>
+<select id="3" class="color" >
+
+  <option value="0">0</option>
+  <option value="red">red</option>
+  <option value="blue">blue</option>
+  <option value="green">green</option>
+  <option value="yellow">yellow</option>
+
+</select>
+</td>
+<td>
+<select id="4" class="color" >
+
+  <option value="0">0</option>
+  <option value="red">red</option>
+  <option value="blue">blue</option>
+  <option value="green">green</option>
+  <option value="yellow">yellow</option>
+
+</select>
+</td>
+
+</tr>
+ 
+</table>
+
+</div>
+
+
+<div id="table">
+<p id="scor"> </p>
+		
+<table id="t1" border="1">
+<tr class="tr13">
+
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+
+</tr>
+<tr class="tr12">
+
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+
+</tr>
+<tr class="tr11">
+
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+
+</tr>
+<tr class="tr10">
+
+<td id="1">
+</td>
+<td id="2">
+</td>
+<td id="3">
+</td>
+<td id="4">
+</td>
+
+</tr>
+<tr class="tr9">
+
+<td id="1">
+</td>
+<td id="2">
+</td>
+<td id="3">
+</td>
+<td id="4">
+</td>
+
+</tr>
+<tr class="tr8">
+
+<td id="1">
+</td>
+<td id="2">
+</td>
+<td id="3">
+</td>
+<td id="4">
+</td>
+
+</tr>
+<tr class="tr7">
+
+<td id="1">
+</td>
+<td id="2">
+</td>
+<td id="3">
+</td>
+<td id="4">
+</td>
+
+</tr>
+<tr class="tr6">
+
+<td id="1">
+</td>
+<td id="2">
+</td>
+<td id="3">
+</td>
+<td id="4">
+</td>
+
+</tr>
+<tr class="tr5">
+
+<td id="1">
+</td>
+<td id="2">
+</td>
+<td id="3">
+</td>
+<td id="4">
+</td>
+
+</tr>
+
+<tr class="tr4">
+
+<td id="1">
+</td>
+<td id="2"> 
+</td>
+<td id="3">
+</td>
+<td id="4">
+</td>
+
+</tr>
+<tr class="tr3">
+
+<td id="1">
+</td>
+<td id="2">
+</td>
+<td id="3">
+</td>
+<td id="4">
+</td>
+
+</tr>
+<tr class="tr2">
+
+<td id="1">
+</td>
+<td id="2">
+</td>
+<td id="3">
+</td>
+<td id="4">
+</td>
+
+</tr>
+<tr class="tr1">
+
+<td id="1">
+</td>
+<td id="2">
+</td>
+<td id="3">
+</td>
+<td id="4">
+</td>
+
+</tr>
+</table>
+</div>
+<div style="position: fixed;left: 2px;bottom: 2px">
+    
+Created by BahadirH. </div>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/wsYPsrzCKiA" title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+allowfullscreen style=" position: fixed;
+    right: 6px;
+    bottom: 6px;"></iframe>
+<script src="Spiel.js"></script>
+</body>
+</html>
